@@ -1,10 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Blockworks</title>
-  </head>
-  <body>
-    <h1>Blockworks</h1>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockworks VR Sandbox</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+
+    <style>
+        .bg-image {
+            background-image: url('img/background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        .container-fluid {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .logo {
+
+            height: 36vh;
+            text-shadow: 0 0 10px #000; 
+        }
+
+        .icon {
+            font-size: 50px; /* Adjust size as needed */
+            margin: 10px;
+            color: #fff; 
+            text-shadow: 0 0 10px #000; 
+        }
+
+        img.glow:hover, .icon.glow:hover {
+            -webkit-filter: drop-shadow(0px 0px 4px rgba(255,255,255,0.75));
+        }
+        @media (max-width: 1200px) {
+      .col-lg-6.ml-lg-auto {
+        margin-left: 0; /* This will center the content on smaller screens */
+    }
+}
+.description {
+    margin: 20px 0;
+    color: #fff; /* Or any color you prefer */
+    font-family: Montserrat, "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 3vh;
+    font-weight: 300;
+    text-shadow: 0 0 10px #000; 
+   /* text-shadow: -1px -1px 3px #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;  */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-image">
+        <div class="row">
+            <div class="col-lg-6 ml-lg-auto text-center">
+                <img src="img/logo.png" alt="Logo" class="logo">
+                <p class="description">Blockworks is a creative VR sandbox. Express your full creativity and build anything your mind can imagine!</p>
+                <a href="https://www.tiktok.com/@elasticsea" class="icon-link">
+                    <i class="fab fa-tiktok icon glow"></i>
+                </a>
+                <a href="https://discord.gg/blockworks" class="icon-link">
+                  <i class="fab fa-discord icon glow"></i>
+
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
 </html>
